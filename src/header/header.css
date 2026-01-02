@@ -1,0 +1,94 @@
+header.flex{
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin: 1.2rem 0;
+}
+
+header.flex nav{    
+    border-radius: 1.5rem;
+    padding: 0.77rem 1.6rem;
+    background-color: var(--bgHeader);
+    box-shadow: 1px 1px 40px rgb(35, 35, 36, 0.165);
+}
+
+header ul.flex{
+    gap: 1rem;
+}
+
+header ul li a{
+    color: var(--title);
+    font-size: 0.88rem;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    opacity: 1;
+    color: var(--blue);
+}
+
+header.flex button{
+    font-size: 1.2rem;
+}
+
+
+header button.menu{
+    display: none;
+}
+
+.fixed{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(33, 33, 45, 0.773);
+    z-index: 999;
+}
+
+header .modal{
+    width: 85%;
+    padding: 1rem 1.5rem;
+    background-color: var(--secondary);
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    animation: modalMove 0.7s 1;
+}
+
+@keyframes modalMove{
+    0% {scale: 0}
+    60%{scale: 1.1}
+    100% {scale: 1}
+}
+
+header.flex button.menu{
+    display: block;
+}
+
+header .fixed ul.modal li{
+    padding: 0.77rem 1.66rem;
+    border-bottom: 1px solid var(--border);
+}
+
+header.flex div.fixed ul.modal li:first-child{
+    text-align: right;
+    padding: 0.2rem 0 0 0;
+}
+
+header .fixed ul.modal li:last-child{
+    border: none;
+
+}
+
+header .fixed ul.modal li a{
+    font-size: 1rem;
+}
+
+@media (max-width: 700px){
+    header.flex nav{
+        display: none;
+    }
+    header button.menu{
+        display: block;
+    }
+}
