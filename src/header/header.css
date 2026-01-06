@@ -37,7 +37,18 @@ header button.menu{
     display: none;
 }
 
-.fixed{
+/*IconButton*/
+header.flex .icon-menu, header button.mode{
+    background-color: var(--bgHeader);
+    height: 2.6rem;
+    width: 2.6rem;
+    
+    text-align: center;
+}
+
+/* modal style*/
+
+header .fixed{
     position: fixed;
     inset: 0;
     background-color: rgba(33, 33, 45, 0.773);
@@ -63,6 +74,7 @@ header .modal{
 
 header.flex button.menu{
     display: block;
+    
 }
 
 header .fixed ul.modal li{
@@ -75,6 +87,7 @@ header.flex div.fixed ul.modal li:first-child{
     padding: 0.2rem 0 0 0;
 }
 
+ 
 header .fixed ul.modal li:last-child{
     border: none;
 

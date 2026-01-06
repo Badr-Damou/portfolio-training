@@ -46,8 +46,7 @@ li{
 }
 
 a{
-  text-decoration: none;
-  color: initial;
+  all:unset;
 }
 
 .flex{
@@ -57,4 +56,8 @@ a{
 
 .border{
   border: 2px solid red;
+}
+
+button {
+  all: unset;
 }

@@ -9,7 +9,7 @@ function Header() {
   }
   return (
     <header className="flex">
-      <button className="menu" onClick={handleModalShow}>show modal</button>
+      <button className="menu icon-menu" onClick={handleModalShow}></button>
       <div />
       <nav>
         <ul className="flex">
@@ -20,17 +20,17 @@ function Header() {
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
-      <button>light</button>
+      <button className="mode"><span className="icon-moon-o"></span></button>
 
       {showModal && (
         <div className="fixed ">
           <ul className="modal">
-            <li><button onClick={handleModalShow}>x</button></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Article</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Speaking</a></li>
-            <li><a href="">Contact</a></li>
+            <li><button className="icon-clear" onClick={handleModalShow}/></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Article</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Speaking</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
           
         </div>
