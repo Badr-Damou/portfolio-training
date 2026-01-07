@@ -11,7 +11,6 @@ function App() {
   return (
     <div className='container'>
       <Header />
-      <div className="devieder" />
       <Hero />
       <div className="devieder" />
       <Main />

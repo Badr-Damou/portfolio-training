@@ -1,0 +1,63 @@
+/*  =============================
+    Table of contents
+    =============================
+
+    1. Header styles
+    2. Icon & button styles
+    3. Modal styles
+    4. Responsive styles
+    =============================
+*/
+
+
+/*
+========== Header styles ==========
+*/
+
+section.hero{
+    margin-top: 4rem;
+    padding: 0 4rem;
+}
+
+section.hero div.content{
+    flex-grow: 1;
+}
+
+section.hero div.content .content-imgs img.profile-img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    padding: 1px;  
+    border: 1px solid darkorange;
+    box-shadow: 2px 2px 40px rgba(180, 178, 178, 0.349) inset;
+}
+
+section.hero div.content .content-imgs span.icon-verified{
+    color:var(--blue);   
+}
+
+section.hero div.content h1{
+    margin-top: 0.8rem;
+    letter-spacing: normal;
+    font-size: 3.3rem;
+}
+
+section.hero div.content p{
+    margin: 1rem 0;
+    letter-spacing: normal;
+    color: var(--subtitle);
+    font-size: 1.2rem;
+}
+
+section.hero div.content ul li{
+    margin-right: 1rem;
+}
+section.hero div.content ul li a{
+    color: var(--subtitle);
+    font-size: 1.7rem;
+}
+
+section.hero .animation{
+    width: 50%
+}
