@@ -1,3 +1,19 @@
+/*  =============================
+    Table of contents
+    =============================
+
+    1. Header styles
+    2. Icon & button styles
+    3. Modal styles
+    4. Responsive styles
+    =============================
+*/
+
+
+/*
+========== Header styles ==========
+*/
+
 header.flex{
     justify-content: space-between;
     padding: 0 2rem;
@@ -37,16 +53,28 @@ header button.menu{
     display: none;
 }
 
-/*IconButton*/
+/*
+========== Icon & button styles ==========
+*/
 header.flex .icon-menu, header button.mode{
     background-color: var(--bgHeader);
     height: 2.6rem;
     width: 2.6rem;
-    
+    border-radius: 50%;
+    color: var(--subtitle);
     text-align: center;
+    border: rgba(250, 128, 114, 0.171) 1px solid;
+    transition: 0.2s;
 }
 
-/* modal style*/
+header.flex .icon-menu:hover, header button.mode:hover{
+    color: var(--title); 
+    border: rgba(250, 128, 114, 0.795) 1px solid;
+}
+
+/*
+========== Modal styles ==========
+*/
 
 header .fixed{
     position: fixed;
@@ -97,7 +125,25 @@ header .fixed ul.modal li a{
     font-size: 1rem;
 }
 
-@media (max-width: 700px){
+header .fixed ul.modal li button.icon-clear{
+    font-size: 1.3rem;
+    color: var(--subtitle);
+    transition: 0.3s; 
+    
+    font-weight: 600;
+}
+
+header .fixed ul.modal li button.icon-clear:hover{
+    color: crimson;
+    font-size: 1.6rem;
+    transform: rotate(180deg);
+}
+
+/*
+========== Responsive styles ==========
+*/
+
+@media (max-width: 720px){
     header.flex nav{
         display: none;
     }
