@@ -25,7 +25,7 @@ function Header() {
       {showModal && (
         <div className="fixed ">
           <ul className="modal">
-            <li><button className="icon-clear" onClick={handleModalShow}/></li>
+            <li><button className="icon-close" onClick={handleModalShow}/></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Article</a></li>
             <li><a href="#">Project</a></li>
