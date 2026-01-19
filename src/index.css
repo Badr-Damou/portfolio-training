@@ -4,6 +4,11 @@ html{
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
 }
+
+html {box-sizing: border-box;}
+
+*,*:before, *:after {box-sizing: inherit;}
+
 :root{
   --primary: #000;  
   --secondary: rgb(24 24 27);
@@ -34,6 +39,7 @@ body{
   width: 80%;
   background-color: var(--secondary);
   margin: auto;
+  padding: 0 4rem;
 }
 
 .devieder{
@@ -68,4 +74,29 @@ button:hover{
 
 button:active{
   scale: 0.95;
+}
+
+
+/*
+========== Responsive styles ==========
+*/
+@media (max-width: 760px){
+    .container{
+      padding: 0 3rem;
+      width: 85%;
+    }
+}
+
+@media (max-width: 650px){
+    .container{
+      padding: 0 1rem;
+      width: 90%;
+    }
+}
+
+@media (max-width: 550px){
+    .container{
+      padding: 0;
+      width: 98%;
+    }
 }

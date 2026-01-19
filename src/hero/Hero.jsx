@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="flex hero ">
       <div className="content border">
-        <div className="content-imgs">
+        <div className="content-imgs flex">
           <img className="profile-img" src={MyPic} alt="" />
           <span className="icon-verified" />
         </div>

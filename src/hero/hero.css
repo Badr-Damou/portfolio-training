@@ -16,21 +16,24 @@
 
 section.hero{
     margin-top: 4rem;
-    padding: 0 4rem;
 }
 
 section.hero div.content{
     flex-grow: 1;
 }
 
+section.hero div.content .content-imgs {
+    align-items: end;
+}
+
 section.hero div.content .content-imgs img.profile-img{
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    margin-right: 0.5rem;
     padding: 1px;  
     border: 1px solid darkorange;
     box-shadow: 2px 2px 40px rgba(180, 178, 178, 0.349) inset;
+    
 }
 
 section.hero div.content .content-imgs span.icon-verified{

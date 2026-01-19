@@ -142,11 +142,28 @@ header .fixed ul.modal li button.icon-close:hover{
 ========== Responsive styles ==========
 */
 
-@media (max-width: 720px){
+
+
+@media (max-width: 850px){
+    header.flex {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 800px){
+    header.flex {
+        padding: 0;
+    }
+}
+
+@media (max-width: 760px){
     header.flex nav{
         display: none;
     }
     header button.menu{
         display: block;
     }
+    header.flex button.icon-menu{
+    display: block;
+}
 }
