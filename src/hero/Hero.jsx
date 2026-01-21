@@ -5,18 +5,18 @@ import './hero.css'
 export default function Hero() {
   return (
     <section className="flex hero ">
-      <div className="content border">
+      <div className="content">
         <div className="content-imgs flex">
           <img className="profile-img" src={MyPic} alt="" />
           <span className="icon-verified" />
         </div>
-        <h1>Software designer founder, and amateur astronaut.</h1>
-        <p>
+        <h1 className='title'>Software designer founder, and amateur astronaut.</h1>
+        <p className='sub-title'>
           i'm Ali Hassan, a software engineer and etrepreneur based in New York.
           i'm the fouder and CEO of Planetaria, where we develop technologies
           that empower regular people to explore space on their own items.
         </p>
-        <ul className='flex'>
+        <ul className='icon-list flex'>
           <li>
             <a className="icon-x" href=""></a>
           </li>
